@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/css/home.css">
+  <link rel="stylesheet" href="./static/font/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,100&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="container-fluid">
+    <header style="display: flex;">
+      <div class="header_left">
+        <img width="50px" src="./static/image/logo_nike.jpg" alt="">
+      </div>
+
+      <div class="right" style="display: flex;position: absolute; left: 76%;">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find a Store </a><p>|</p><a href="#"><i class="fa-solid fa-info"></i> Help </a><p>|</p><a href="#"><i class="fa-solid fa-headset"></i> Contact </a>
+
+      </div>
+    </header>
+    <!-- nav -->
+    <nav>
+      <a href="#home" class="brand">SEJO SHOP</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Man</a></li>
+        <li><a href="#">Woman</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <form class="search-form" action="/search" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+      <div class="user-buttons" style="display: flex;">
+        <a href="">Log in</a>
+        <a href="">Sign in</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- slider -->
+  <div class="slider-container">
+    <ul class="slider">
+      <li class="slider-item"><img src="./static/image/img2.jpg" alt="Image 1"></li>
+      <li class="slider-item"><img src="./static/image/img1.jpg" alt="Image 2"></li>
+      <li class="slider-item"><img src="./static/image/img3.jpg" alt="Image 3"></li>
+    </ul>
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+  </div>
+  </div>
+  <!-- content -->
+  <div class="container">
+   
+  </div>
+  <!-- footer -->
+  <footer>
+      <div class="footer-content">
+        
+        <!-- <div class="social-media" style="display: flex;">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="location">
+          <p><i class="fas fa-map-marker-alt"></i> Địa điểm: 123 ABC, Xã Y, Huyện Z, Tỉnh T</p>
+        </div> -->
+      </div>
+  </footer>
+</body>
+<script src="./static/js/home.js"></script>
+
+</html>
