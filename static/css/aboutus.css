@@ -1,0 +1,30 @@
+html,body{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.container{
+    width: 90%;
+    margin-left: 5%;
+}
+.header {
+    height: 500px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                radial-gradient(77.36% 256.97% at 77.36% 57.52%, rgb(238, 239, 175) 0%, rgb(195, 227, 250) 100%);
+    clip-path: ellipse(150% 87% at 93% 13%);
+}
+.header-info {
+    margin:100px 0 0 100px;
+
+}
+.header-img
+{
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    width: auto;
+    margin-bottom: auto;
+}
