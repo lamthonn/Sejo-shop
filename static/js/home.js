@@ -16,6 +16,7 @@ function nextSlide() {
   showSlides();
 }
 
+
 function prevSlide() {
   if (slideIndex > 0) {
     slideIndex--;
@@ -24,5 +25,7 @@ function prevSlide() {
   }
   showSlides();
 }
+
+setTimeout(function(){},500)
 
 showSlides();
