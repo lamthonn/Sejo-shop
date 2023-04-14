@@ -29,3 +29,8 @@ function prevSlide() {
 setTimeout(function(){},500)
 
 showSlides();
+
+
+
+
+// 
