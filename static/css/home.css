@@ -155,6 +155,26 @@ li {
   padding: 5px;
   border-radius: 5px;
 }
+
+.sport{
+  background-color: #3e3e3e;
+  width: 49%;
+  height: 560px;
+}
+.style_sport {
+  position: relative; 
+  top: 75%;  
+  color: aliceblue; 
+  background-color: rgba(0, 0, 0, 0.396); 
+  padding-left:5% ;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+.btnSport:hover{
+  font-size: 17px;
+  cursor: pointer;
+}
 /* footer */
 footer{
   margin-top: 45px;
