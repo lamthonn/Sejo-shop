@@ -16,10 +16,9 @@ document.getElementById('header').innerHTML = `
         <nav>
             <a href="#home" class="brand" style="font-size: 30px;">SEJO SHOP</a>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="./home.html">Home</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="#">Man</a></li>
-                <li><a href="#">Woman</a></li>
+                <li><a href="#">Product</a></li>
                 <li><a href="#">Sale</a></li>
             </ul>
             <form class="search-form" action="/search" method="GET">

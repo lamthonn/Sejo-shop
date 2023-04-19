@@ -16,7 +16,6 @@ function nextSlide() {
   showSlides();
 }
 
-
 function prevSlide() {
   if (slideIndex > 0) {
     slideIndex--;
@@ -26,11 +25,6 @@ function prevSlide() {
   showSlides();
 }
 
-setTimeout(function(){},500)
+setInterval(nextSlide,3500);//gọi lại hàm nextSlide sau 3,5s
 
 showSlides();
-
-
-
-
-// 
