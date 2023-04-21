@@ -167,12 +167,26 @@ footer i:hover{
  }
 
  .header_responsive_left ul li,.header_responsive_right ul li{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.354);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+  
+  
+ }
+ .header_responsive_left ul li a,.header_responsive_right ul li a{
+  text-decoration: none;
   color: rgb(255, 255, 255);
  }
+}
 
- .header_responsive_content li:hover{
-  color: rgb(0, 0, 0);
- }
- 
+@media only screen and (min-width:601px) and (max-width:1000px){
+  .input_nav{
+    width: 50%;
+  }
+
+  .user-buttons{
+    display: none;
+  }
+
+  header .right{
+    display: none;
+  }
 }
