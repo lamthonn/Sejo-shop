@@ -16,7 +16,6 @@ function nextSlide() {
   showSlides();
 }
 
-
 function prevSlide() {
   if (slideIndex > 0) {
     slideIndex--;
@@ -26,11 +25,20 @@ function prevSlide() {
   showSlides();
 }
 
-setTimeout(function(){},500)
+setInterval(nextSlide,3500);
 
 showSlides();
 
-
-
-
-// 
+// responsive
+const dropNav = document.querySelector('.fa-bars');
+const isShow = false;
+dropNav.addEventListener('click',function (){
+  this.isShow = !this.isShow;
+  if(this.isShow)
+  {
+    document.querySelector('.header_responsive').style.display = 'grid';
+  }
+  else{
+    document.querySelector('.header_responsive').style.display = 'none';
+  }
+})
