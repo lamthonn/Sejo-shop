@@ -1,10 +1,13 @@
 import html from "../core.js";
 import { connect } from "../store.js";
-
+import Product from "./product.js";
 
 function App({ products }) {
     return html`
-    <h1>${products[0].title}</h1>
+    <div class="list-product">   
+        ${products.map((product, index) =>Product({product, index}))}
+    </div>
+
     `
 }
 

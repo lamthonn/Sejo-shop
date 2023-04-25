@@ -255,3 +255,10 @@ button:hover {
         margin: 20px 0;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1100px)
+{
+    html {
+        font-size: 11px;
+    }
+}
