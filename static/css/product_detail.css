@@ -1,0 +1,22 @@
+.container{
+    margin-top: 1rem;
+}
+
+.product{
+    width: 100%;
+    height: auto;   
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+}
+.product_img{
+    width: 50%;
+    height: 45rem;
+    overflow: hidden;
+    object-position: center;
+}
+
+.product_img img{
+    width: 100%;
+}

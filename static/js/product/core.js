@@ -23,9 +23,14 @@ export function createStore(reducer) {
             roots.set(root, component);
             render();
         },
-        connect(selector = state => state) {
-            return component => (props, ...args) =>
-                component(Object.assign({}, props, selector(state), ...args));
+    
+        //connect kết nối store với view 
+        connect(selector = state => state){
+            return(function(component){
+                return function(props,...args){
+                   return component(Object.assign({},props,selector(state), ...args));
+                }
+            })
         },
         dispatch(action, ...args) {
             state = reducer(state, action, args);
