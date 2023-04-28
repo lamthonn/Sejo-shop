@@ -27,10 +27,8 @@ const init = {
             price: "6900000",
             sold: "120",
             sales: "30",
-        },
-        
-        
-    ]
+        },  
+    ], isdetail:0,
 }
 
 const actions = {

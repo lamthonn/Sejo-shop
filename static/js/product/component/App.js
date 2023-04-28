@@ -1,7 +1,6 @@
 import html from "../core.js";
 import { connect } from "../store.js";
 import Product from "./product.js";
-import product_detail from "./product_detail.js";
 
 function App({ products }) {
     return html`

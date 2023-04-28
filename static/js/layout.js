@@ -89,3 +89,21 @@ dropNav.addEventListener('click',function (){
     document.querySelector('.header_responsive').style.display = 'none';
   }
 })
+
+//product detail
+let x = 1;
+let soLuong = document.getElementById('so_luong');
+function tru(){
+ if(x > 0){
+  x --;
+  
+ }
+ else{
+  x===0;
+ }
+ soLuong.innerHTML = x;
+}
+function cong(){
+  x ++;
+  soLuong.innerHTML = x;
+}

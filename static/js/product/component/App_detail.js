@@ -1,11 +1,12 @@
 import html from "../core.js";
 import { connect } from "../store.js";
+// import productDetail from "./product_detail.js";
 
-function productDetail({ products,isdetail }) {
+function App_detail({products,isdetail}) {
     return html`
     <div class="product">
     <div class="product_img">
-        <img src="./static/image/product/Air Jordan XXXVII PF.jpg" alt="">
+        <img src="./static/image/product/${products[isdetail].title}.jpg" alt="">
     </div>
     <div class="product-information">
         <h1>Air Jordan XXXVII PF</h1>
@@ -41,5 +42,4 @@ function productDetail({ products,isdetail }) {
     </div>
     `
 }
-
-export default connect()(productDetail);
+export default connect()(App_detail);
