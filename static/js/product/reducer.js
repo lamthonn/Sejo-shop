@@ -3,38 +3,41 @@ const init = {
         {
             title: "Air Jordan XXXVII PF",
             type: "Men's Basketball Shoes",
-            price: "3600000",
+            price: 3600000,
             sold: "85",
-            sales: "20",
+            sales: 20,
         },
         {
             title: "Jordan ADG 4",
             type: "Men's Golf Shoes",
-            price: "5600000",
+            price: 5600000,
             sold: "15",
-            sales: "10",
+            sales: 10,
         },
         {
             title: "Jordan Courtside 23",
             type: "Men's Shoes",
-            price: "6900000",
+            price: 6900000,
             sold: "120",
-            sales: "30",
+            sales: 30,
         },
         {
             title: "Jordan Max Aura 4",
             type: "Men's Shoes",
-            price: "6900000",
+            price: 6900000,
             sold: "120",
-            sales: "30",
+            sales: 30,
         },
         
-        
-    ]
+    
+    ],
+    isdetail:0,
 }
 
 const actions = {
-
+    ABC(state, index) {
+        state.isdetail = index;
+    }
 }
 
 export default function reducer(state = init, action, args) {
