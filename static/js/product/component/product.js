@@ -20,7 +20,7 @@ function Product({ product, index }) {
                     <i class="bi bi-star-fill color--yellow"></i>
                     <i class="bi bi-star-fill color--yellow"></i>
                     <i class="bi bi-star-fill color--yellow"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill color--yellow"></i>
                     <span class="product-sold">${product.sold} đã bán</span>
                 </div>
             </div>

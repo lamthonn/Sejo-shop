@@ -18,7 +18,7 @@ document.getElementById('header').innerHTML = `
       <ul>
         <li><a href="./home.html">Home</a></li>
         <li><a href="./aboutus.html">About Us</a></li>
-        <li><a href="#">Product</a></li>
+        <li><a href="./product.html">Product</a></li>
         <li><a href="#">Sale</a></li>
       </ul>
       <form class="search-form" action="/search" method="GET">
@@ -46,7 +46,7 @@ document.getElementById('header').innerHTML = `
         <ul>
           <li><a href="./home.html">HOME</a></li>
           <li><a href="./aboutus.html">ABOUT US</a></li>
-          <li><a href="">PRODUCTS</a></li>
+          <li><a href="./product.html">PRODUCTS</a></li>
           <li><a href="">SALE</a></li>
           <li><a href="">CONTACT</a></li>
         </ul>
