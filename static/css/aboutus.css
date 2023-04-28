@@ -74,6 +74,17 @@ button:hover {
     font-weight: 400;
 }
 
+/* image3 */
+.image3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image3 img {
+    width: 30%;
+    height: auto;
+}
+
 
 
 /* notice */
