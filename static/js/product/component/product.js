@@ -4,14 +4,14 @@ import html from "../core.js";
 function Product({ product, index }) {
     const sales = product.price - product.price * product.sales / 100;
     return html`
-    <a href='product_detail.html' class="product" onclick="dispatch('ABC', ${index})">
+    <a href='product_detail.html' class="product" onclick="dispatch('click', ${index})">
 
             <img class="product-image" src="./static/image/product/${product.title}.jpg" alt="">
             <span class="product-title">${product.title}</span>
             <span class="product-type">${product.type}</span>
-            <div class="product-price">
+            <div class="product-price" >
                 <span class="product-price-sales">${sales}</span>
-                <span class="product-price-origin">${product.price}</span>
+                <span class="product-price-origin" >${product.price}</span>
             </div>
             <div class="product-rate">
                 <i class="bi bi-heart-fill color--red product-heart"></i>

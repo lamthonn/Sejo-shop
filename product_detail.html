@@ -9,19 +9,30 @@
 	<link rel="stylesheet" href="./static/css/main.css">
 	<link rel="stylesheet" href="./static/font/fontawesome-free-6.3.0-web/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,100&display=swap"
-    rel="stylesheet">
+		rel="stylesheet">
 </head>
 
 <body>
 	<div id="header"></div>
-	<div class="container">
+		<div class="container">
 			<div id="root_detail"></div>
 		</div>
 	</div>
 	<div id="footer"></div>
 </body>
 <script src="./static/js/layout.js"></script>
-<script src="./static/js/home.js"></script>
+<!-- <script src="./static/js/home.js"></script> -->
 <script type="module" src="./static/js/product/main/main_detail.js"></script>
-
+<script>
+	let x = 1;
+	let soLuong = document.querySelector('#so_luong');
+	function tru() {
+		x--;
+		soLuong.innerHTML = x;
+	}
+	function cong() {
+		x++;
+		soLuong.innerHTML = x;
+	}
+</script>
 </html>

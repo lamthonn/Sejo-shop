@@ -1,3 +1,5 @@
+import storage from "../util/storage";
+
 const init = {
     products: [
         {
@@ -31,12 +33,14 @@ const init = {
         
     
     ],
-    isdetail:0,
+    isdetail: storage.get(),
 }
 
 const actions = {
-    ABC(state, index) {
-        state.isdetail = index;
+    click( index) {
+        isdetail = index;
+        storage.set(isdetail);
+        
     }
 }
 

@@ -14,7 +14,7 @@ document.getElementById('header').innerHTML = `
     </header>
      
     <nav>
-      <a href="#home" class="brand" style="font-size: 30px;">SEJO SHOP</a>
+      <a href="./home.html" class="brand" style="font-size: 30px;">SEJO SHOP</a>
       <ul>
         <li><a href="./home.html">Home</a></li>
         <li><a href="./aboutus.html">About Us</a></li>
@@ -90,20 +90,3 @@ dropNav.addEventListener('click',function (){
   }
 })
 
-//product detail
-let x = 1;
-let soLuong = document.getElementById('so_luong');
-function tru(){
- if(x > 0){
-  x --;
-  
- }
- else{
-  x===0;
- }
- soLuong.innerHTML = x;
-}
-function cong(){
-  x ++;
-  soLuong.innerHTML = x;
-}
