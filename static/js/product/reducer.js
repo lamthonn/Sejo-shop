@@ -1,4 +1,4 @@
-import storage from "../util/storage";
+import storage from "../util/storage.js";
 
 const init = {
     products: [
@@ -26,7 +26,21 @@ const init = {
         {
             title: "Jordan Max Aura 4",
             type: "Men's Shoes",
-            price: 6900000,
+            price: 5500000,
+            sold: "120",
+            sales: 30,
+        },
+        {
+            title: "Jordan Stay Loyal 2",
+            type: "Men's Shoes",
+            price: 4800000,
+            sold: "120",
+            sales: 30,
+        },
+        {
+            title: "Jordan Why Not .6 PF",
+            type: "Men's Shoes",
+            price: 2400000,
             sold: "120",
             sales: 30,
         },
@@ -37,10 +51,10 @@ const init = {
 }
 
 const actions = {
-    click( index) {
+    click({isdetail},index) {
         isdetail = index;
         storage.set(isdetail);
-        
+
     }
 }
 
