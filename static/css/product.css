@@ -168,6 +168,10 @@
     position: relative;
 }
 
+.navbar-right_filter:hover {
+    cursor: pointer;
+}
+
 .navbar-right_sort {
     padding-left: 1rem;
     cursor: pointer;
@@ -352,4 +356,49 @@
 
 .showBlock {
     display: block !important;
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+    html {
+        font-size: 12px;
+    }
+    .product {
+        width: 48%;
+
+    }
+    .product-image {
+        height: 18rem;
+    }
+    .product-favourite::before {
+        top: 20px
+    }
+    .product-sale-off {
+        height: 40px;
+        width: 40px;
+    }
+
+    .product-sale-off::before {
+        border-width: 0 20px 8px;
+    }
+
+    .notice-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .notice-left {
+        /* display: none; */
+        position: absolute;
+        z-index: 100;
+        width: 90%;
+        background-color: white;
+        left: 6px;
+        padding: 0 2rem;
+    }
+
+
+
+
 }
