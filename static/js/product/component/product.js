@@ -9,9 +9,9 @@ function Product({ product, index }) {
             <img class="product-image" src="./static/image/product/${product.title}.jpg" alt="">
             <span class="product-title">${product.title}</span>
             <span class="product-type">${product.type}</span>
-            <div class="product-price">
+            <div class="product-price" >
                 <span class="product-price-sales">${sales}</span>
-                <span class="product-price-origin">${product.price}</span>
+                <span class="product-price-origin" >${product.price}</span>
             </div>
             <div class="product-rate">
                 <i class="bi bi-heart-fill color--red product-heart"></i>

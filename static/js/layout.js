@@ -14,7 +14,7 @@ document.getElementById('header').innerHTML = `
     </header>
      
     <nav>
-      <a href="#home" class="brand" style="font-size: 30px;">SEJO SHOP</a>
+      <a href="./home.html" class="brand" style="font-size: 30px;">SEJO SHOP</a>
       <ul>
         <li><a href="./home.html">Home</a></li>
         <li><a href="./aboutus.html">About Us</a></li>

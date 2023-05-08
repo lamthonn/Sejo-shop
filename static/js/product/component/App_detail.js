@@ -9,11 +9,11 @@ function App_detail({products,isdetail}) {
             <img src="./static/image/product/${products[isdetail].title}.jpg" alt="">
         </div>
         <div class="product-information">
-            <h1>Air Jordan XXXVII PF</h1>
-            <p>Men's Basketball Shoes</p>
+            <h1>${products[isdetail].title}</h1>
+            <p>${products[isdetail].type}</p>
             <div class="price">
-                <h2><span>Price :</span> <span style="font-family: 'Times New Roman', Times, serif;">3.600.000 VND</span></h2>
-                <p><span>sale: </span> 20%</p>
+                <h2><span>Price :</span> <span style="font-family: 'Times New Roman', Times, serif;">${products[isdetail].price} VND</span></h2>
+                <p><span>sale: </span> ${products[isdetail].sales}%</p>
             </div>
             <hr>
 
@@ -41,7 +41,6 @@ function App_detail({products,isdetail}) {
             </div>
         </div>
     </div>
-    
     `
 }
 export default connect()(App_detail);
