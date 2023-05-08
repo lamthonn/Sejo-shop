@@ -64,7 +64,7 @@ document.getElementById('header').innerHTML = `
 document.getElementById('footer').innerHTML = `
     <footer>
         <div >
-            <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LamVu</span>
+            <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LN Team</span>
         </div>
 
         <ul>
