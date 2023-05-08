@@ -4,7 +4,7 @@ import html from "../core.js";
 function Product({ product, index }) {
     const sales = product.price - product.price * product.sales / 100;
     return html`
-    <a href='product_detail.html' class="product" onclick="dispatch('click', ${index})">
+    <a href='product_detail.html' class="product" onclick="dispatch('ABC', ${index})">
 
             <img class="product-image" src="./static/image/product/${product.title}.jpg" alt="">
             <span class="product-title">${product.title}</span>

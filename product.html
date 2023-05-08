@@ -22,22 +22,108 @@
             <span class="navbar-left">Men's Shoes(122)</span>
             <div class="navbar-right">
                 <div class="navbar-right_filter">
-                    Hide Filter
-                    <i class="bi bi-filter"></i>
+                    <span class="title-show" style="display: none;" >
+                        Show Filter
+                        <i class="bi bi-filter"></i>
+                    </span>
+                    <span class="title-hide">
+                        Hide Filter
+                        <i class="bi bi-filter"></i>
+                    </span>
+                    
                 </div>
                 <div class="navbar-right_sort">
                     Sort By
-                    <i class="bi bi-chevron-down"></i>
+                    <i class="bi bi-chevron-down down1"></i>
+                    <i class="bi bi-chevron-up up1" ></i>
+                </div>
+                <div class="select-sort">
+                    <span>Featured</span>
+                    <span>Newest</span>
+                    <span>Price: High-Low</span>
+                    <span>Price: Low-High</span>
                 </div>
             </div>
         </div>
 
         <div class="notice">
-            <!-- <div class="notice-left"></div> -->
-            <!-- <div class="notice-right"> -->
+            <div class="notice-left">
+                <div style="font-size: 1.6rem;">
+                    <i class="bi bi-funnel"></i>
+                    Filter
+                </div>
+
+                <div class="Filter-title">
+                    Type
+                    <div class="title-icon">
+                        <i class="bi bi-chevron-down down2"></i>
+                        <i class="bi bi-chevron-up up2" ></i>
+                    </div>
+                </div>
+                <div class="notice-left_type border index0">
+                    <span>Men</span>
+                    <span>Women</span>
+                    <span>Child</span>
+                </div>
+
+                <div class="Filter-title">
+                    Price
+                    <div class="title-icon">
+                        <i class="bi bi-chevron-down down2"></i>
+                        <i class="bi bi-chevron-up up2" ></i>
+                    </div>
+                </div>
+                <div class="notice-left_price border index1">
+                    From 
+                    <input type="text">
+                    To
+                    <input type="text">
+                </div>
+
+                <div class="Filter-title">
+                    Size
+                    <div class="title-icon">
+                        <i class="bi bi-chevron-down down2"></i>
+                        <i class="bi bi-chevron-up up2" ></i>
+                    </div>
+                </div>
+                <div class="notice-left_size border index2">
+                    <button>36</button>
+                    <button>37</button>
+                    <button>38</button>
+                    <button>39</button>
+                    <button>40</button>
+                    <button>41</button>
+                    <button>42</button>
+                </div>
+
+                <div class="Filter-title">
+                    Color
+                    <div class="title-icon">
+                        <i class="bi bi-chevron-down down2"></i>
+                        <i class="bi bi-chevron-up up2" ></i>
+                    </div>
+                </div>
+
+                <div class="notice-left_color border index3">
+                    <button style="background-color: red;"></button>
+                    <button style="background-color: yellow;"></button>
+                    <button style="background-color: rgb(40, 40, 250);"></button>
+                    <button style="background-color: black;"></button>
+                    <button style="background-color: white;"></button>
+                    <button style="background-color: rgb(17, 180, 230);"></button>
+                    <button style="background-color: rgb(56, 219, 56);"></button>
+                    <button style="background-color: pink;"></button>
+                    <button style="background-color: orange;"></button>
+                </div>
+
+                <button class="Filter-search">Search</button>
+            </div>
+            <div class="notice-right">
                 <div id="root"></div>
             <!-- </div> -->
         </div>
+        <!-- <div id="root"></div> -->
     </div>
 
     <div id="footer"></div>
