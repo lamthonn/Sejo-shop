@@ -15,6 +15,7 @@
     height: 45rem;
     overflow: hidden;
     object-position: center;
+    display: flex;
 }
 
 .product_img img{

@@ -37,13 +37,7 @@ const init = {
             sold: "120",
             sales: 30,
         },
-        {
-            title: "Jordan Why Not .6 PF",
-            type: "Men's Shoes",
-            price: 2400000,
-            sold: "120",
-            sales: 30,
-        },
+       
         {
             title: "Jordan Stay Loyal 2",
             type: "Women's Shoes",
