@@ -25,7 +25,8 @@ allFilter.forEach((Filter,index) => {
 
 let clickFirst = true;
 
-if(window.innerWidth <= 600)
+
+if(window.innerWidth <= 740)
 {
     clickFirst = false
     $('.title-show').style.display = 'block';
@@ -46,10 +47,28 @@ $('.navbar-right_filter').addEventListener('click', function() {
         $('.title-show').classList.toggle('showBlock')
         $('.title-hide').classList.toggle('hide')
         $('.notice-left').classList.toggle('hide')
-        $('.notice-right').classList.toggle('show-product-all');
-        $$('.product-image').forEach(img => {
-            img.classList.toggle('show-product-image');
-        })
+        
+        if(window.innerWidth > 740) {
+            if(window.innerWidth >740 && window.innerWidth <1023)
+            {
+                $('.notice-right').classList.toggle('show-product-all');
+                $$('.product-image').forEach(img => {
+                    img.classList.toggle('show-product-image-ipad');
+                })
+                $$('.product').forEach(pro => {
+                    pro.classList.toggle('show-product-ipad');
+                })
+            }
+            else {
+                $('.notice-right').classList.toggle('show-product-all');
+                $$('.product-image').forEach(img => {
+                    img.classList.toggle('show-product-image');
+                })
+                $$('.product').forEach(pro => {
+                    pro.classList.toggle('show-product');
+                })
+            }
+        }
     }
 
 

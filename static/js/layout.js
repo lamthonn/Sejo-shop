@@ -1,68 +1,72 @@
 
 document.getElementById('header').innerHTML = `
 <div class="container-fluid">
-        <header>
-          <div class="header_left">
-            <img width="50px" src="./static/image/logo_nike.jpg" alt="logo" style="margin-left: 38px;">
-          </div>
-        
-          <div class="right">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find a Store </a>
-            <p>|</p><a href="#"><i class="fa-solid fa-info"></i> Help </a>
-            <p>|</p><a href="#"><i class="fa-solid fa-headset"></i> Contact </a>
-          </div>
-        </header>
-         
-        <nav>
-          <a href="./home.html" class="brand" style="font-size: 30px;">SEJO SHOP</a>
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./aboutus.html">About Us</a></li>
-            <li><a href="./product.html">Product</a></li>
-            <li><a href="#">Sale</a></li>
-          </ul>
-          <form class="search-form" action="/search" method="GET">
-            <input class="input_nav" type="text" name="q" placeholder="Search...">
-            <button type="submit">Search</button>
-          </form>
-          <div class="user-buttons">
-            <a href="./login.html">Log in</a>
-            <a href="./SignIn.html">Sign in</a>
-          </div>
+    <header>
+      <div class="header_left">
+        <img width="50px" src="./static/image/logo_nike.jpg" alt="logo" style="margin-left: 38px;">
+      </div>
+    
+      <div class="right">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Find a Store </a>
+        <p>|</p><a href="#"><i class="fa-solid fa-info"></i> Help </a>
+        <p>|</p><a href="#"><i class="fa-solid fa-headset"></i> Contact </a>
+      </div>
+    </header>
+     
+    <nav>
+      <a href="./home.html" class="brand" style="font-size: 30px;">SEJO SHOP</a>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <form class="search-form" action="/search" method="GET">
+        <input class="input_nav" type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+      <div class="user-buttons">
+        <a href="./login.html">Log in</a>
+        <a href="./SignIn.html">Sign in</a>
+      </div>
 
-          <div class="user-icon">
-            <i class="fa-solid fa-circle-user"></i>
-          </div>
-        
-          <div class="right_responsive" style="display: none">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </nav>
-        </div>
-      
-      
-        <div class="header_responsive">
-        <form action="" style="height: 50%"><input type="text" placeholder="Search..."
-            style="width: 100%; height: 100%; background-color: rgb(207, 207, 207); border: none; border-bottom:1px solid rgba(77, 77, 77, 0.305) ;"> 
-        </form>
-        <div class="header_responsive_content" >
-          <div class="header_responsive_left">
-            <ul>
-              <li><a href="./home.html">HOME</a></li>
-              <li><a href="./aboutus.html">ABOUT US</a></li>
-              <li><a href="./product.html">PRODUCTS</a></li>
-              <li><a href="">SALE</a></li>
-              <li><a href="">CONTACT</a></li>
-            </ul>
-          </div>
-          <div class="header_responsive_right">
-            <ul>
-              <li><a href="">LOGIN</a></li>
-              <li><a href="">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
+      <div class="user-icon">
+        <i class="fa-solid fa-circle-user"></i>
+        <a href="./cart.html">
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </a>
+        <a href="./home.html" id="logOut">Log Out</a>
+      </div>
+    
+      <div class="right_responsive" style="display: none">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    </div>
+  
+  
+    <div class="header_responsive">
+    <form action="" style="height: 50%"><input type="text" placeholder="Search..."
+        style="width: 100%; height: 100%; background-color: rgb(207, 207, 207); border: none; border-bottom:1px solid rgba(77, 77, 77, 0.305) ;"> 
+    </form>
+    <div class="header_responsive_content" >
+      <div class="header_responsive_left">
+        <ul>
+          <li><a href="./home.html">HOME</a></li>
+          <li><a href="./aboutus.html">ABOUT US</a></li>
+          <li><a href="./product.html">PRODUCTS</a></li>
+          <li><a href="">SALE</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="header_responsive_right">
+        <ul>
+          <li><a href="">LOGIN</a></li>
+          <li><a href="">SIGN IN</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
 `
 
 document.getElementById('footer').innerHTML = `
@@ -93,4 +97,17 @@ dropNav.addEventListener('click',function (){
     document.querySelector('.header_responsive').style.display = 'none';
   }
 })
+
+document.getElementById('logOut').addEventListener('click', function() {
+  let is_login = false;
+  localStorage.setItem("isLogin", is_login);
+})
+
+
+const userIcon = document.querySelector(".user-icon");
+const userButton = document.querySelector(".user-buttons");
+      if (localStorage.getItem("isLogin") === "true") {
+          userButton.style.display = "none";
+          userIcon.style.display = "block";
+      }
 

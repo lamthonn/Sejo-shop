@@ -41,10 +41,3 @@ function login(e) {
         alert("Login Fail!!");
     }
 }
-
-const userIcon = document.querySelector(".user-icon");
-const userButton = document.querySelector(".user-buttons");
-        if (localStorage.getItem("isLogin") === "true") {
-            userButton.style.display = "none";
-            userIcon.style.display = "block";
-        }
