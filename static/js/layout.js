@@ -69,19 +69,19 @@ document.getElementById('header').innerHTML = `
     </div>
 `
 
-document.getElementById('footer').innerHTML = `
-    <footer>
-        <div >
-            <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LN Team</span>
-        </div>
+// document.getElementById('footer').innerHTML = `
+//     <footer>
+//         <div >
+//             <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LN Team</span>
+//         </div>
 
-        <ul>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
-    </footer>
-`
+//         <ul>
+//             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+//             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+//             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+//         </ul>
+//     </footer>
+// `
 
 // responsive
 const dropNav = document.querySelector('.fa-bars');
@@ -111,3 +111,32 @@ const userButton = document.querySelector(".user-buttons");
           userIcon.style.display = "block";
       }
 
+
+// footer 
+const iconshows = document.querySelectorAll('.iconshow');
+
+iconshows.forEach(iconshow => {
+  const father1 = iconshow.parentElement;
+  const father2 = iconshow.parentElement.parentElement;
+
+  if(father2.className === 'footer_intro') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.intro_detail').classList.toggle('show_footer')
+    })
+  }
+  else if(father2.className === 'footer_contact') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.contact_detail').classList.toggle('show_footer')
+    })
+  }
+  else if(father2.className === 'footer_help') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.help_detail').classList.toggle('show_footer')
+    })
+  }
+  else {
+    father1.addEventListener('click', () => {
+      document.querySelector('.about_detail').classList.toggle('show_footer')
+    })
+  }
+})
