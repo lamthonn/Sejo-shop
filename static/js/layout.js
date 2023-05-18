@@ -136,12 +136,9 @@ document.getElementById('footer').innerHTML = `
         </div>
     </div>
   </footer>
-`
-
-// footer cũ
-{/* <footer>
+  <div class='footer-2'>
         <div >
-            <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LN Team</span>
+            <span style="position: relative; left: 28%;">© copyright 2023 Sejo_Shop, LN Team</span>
         </div>
 
         <ul>
@@ -149,7 +146,9 @@ document.getElementById('footer').innerHTML = `
             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
         </ul>
-    </footer> */}
+    </div>
+`
+
 
 // responsive
 const dropNav = document.querySelector('.fa-bars');
