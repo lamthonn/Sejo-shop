@@ -77,9 +77,75 @@ document.getElementById('header').innerHTML = `
 `
 
 document.getElementById('footer').innerHTML = `
-    <footer>
+  <footer>
+    <div class="info_dif">Different Informations</div>
+    <div class="footer_intro">
+        <div class="footer-title">
+            Introduction
+            <i class="fa-solid fa-chevron-down iconshow"></i>
+        </div>
+        <div class="intro_detail">
+            <p>Discover our extensive collection of stylish and high-quality footwear for every occasion at our online shoe store. Step into fashion and comfort with us today!</p>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_contact">
+        <div class="footer-title">
+            Contact
+                <i class="fa-solid fa-chevron-down iconshow"></i>
+        </div>
+        <div class="contact_detail">
+            <div>
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <span>Electric Power University, Hoang Quoc Viet street, Bac Tu Liem, Ha Noi</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>093292999</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>SejoShop00@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_help">
+        <div class="footer-title">
+            Get help
+            <i class="fa-solid fa-chevron-down iconshow"></i>
+        </div>
+        <div class="help_detail">
+            <a href="">Order status</a>
+            <a href="">Delivery</a>
+            <a href="">Returns</a>
+            <a href="">Payment options</a>
+        </div>
+    </div>
+
+    <div class="footer_about">
+        <div class="footer-title">
+            About us
+            <i class="fa-solid fa-chevron-down iconshow"></i>
+        </div>
+        <div class="about_detail">
+            <a href="">News</a>
+            <a href="">Careers</a>
+            <a href="">Investors</a>
+            <a href="./aboutus.html">About us</a>
+        </div>
+    </div>
+  </footer>
+  <div class='footer-2'>
         <div >
-            <span style="position: relative; left: 37%;">© copyright 2023 Sejo_Shop, LN Team</span>
+            <span style="position: relative; left: 28%;">© copyright 2023 Sejo_Shop, LN Team</span>
         </div>
 
         <ul>
@@ -87,8 +153,9 @@ document.getElementById('footer').innerHTML = `
             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
         </ul>
-    </footer>
+    </div>
 `
+
 
 // responsive
 const dropNav = document.querySelector('.fa-bars');
@@ -121,3 +188,32 @@ const userButton = document.querySelector(".user-buttons");
           document.querySelectorAll(".login_header_res").style.display = "none";
       }
 
+
+// footer 
+const iconshows = document.querySelectorAll('.iconshow');
+
+iconshows.forEach(iconshow => {
+  const father1 = iconshow.parentElement;
+  const father2 = iconshow.parentElement.parentElement;
+
+  if(father2.className === 'footer_intro') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.intro_detail').classList.toggle('show_footer')
+    })
+  }
+  else if(father2.className === 'footer_contact') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.contact_detail').classList.toggle('show_footer')
+    })
+  }
+  else if(father2.className === 'footer_help') {
+    father1.addEventListener('click', () => {
+      document.querySelector('.help_detail').classList.toggle('show_footer')
+    })
+  }
+  else {
+    father1.addEventListener('click', () => {
+      document.querySelector('.about_detail').classList.toggle('show_footer')
+    })
+  }
+})
