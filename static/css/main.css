@@ -24,6 +24,11 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.right i{
+  margin-right: 5px;
 }
 
 nav {
@@ -64,10 +69,11 @@ li {
 }
 
 .container-fluid a {
-  /* display: block; */
-  padding: 14px 20px;
+  padding: 5px 15px;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .search-form {
@@ -88,12 +94,16 @@ li {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.user-buttons{
+  display: contents;
+}
 .user-buttons a {
   color: #000000;
   text-decoration: none;
 }
-
+#logOut{
+  width: 3.7rem;
+}
 
   /* footer  */
 footer{
@@ -151,7 +161,6 @@ footer div span{
     margin: 0;
     padding: 0;
   }
-  
   .right_responsive{
     width: 85%;
     font-size: 30px;
@@ -173,21 +182,25 @@ footer div span{
   display: grid;
 
 } */
- .header_responsive_left, .header_responsive_right{
+ .header_responsive_left, 
+ .header_responsive_right{
   width: 50%;
  }
- .header_responsive_left ul,.header_responsive_right ul{
+ .header_responsive_left ul,
+ .header_responsive_right ul{
   display: grid;
   line-height: 150%;
   padding: 0 7%;
  }
 
- .header_responsive_left ul li,.header_responsive_right ul li{
+ .header_responsive_left ul li,
+ .header_responsive_right ul li{
   border-bottom: 1px solid rgba(0, 0, 0, 0.247);
   
   
  }
- .header_responsive_left ul li a,.header_responsive_right ul li a{
+ .header_responsive_left ul li a,
+ .header_responsive_right ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
  }
@@ -196,7 +209,7 @@ footer div span{
 }
 }
 
-@media only screen and (min-width:701px) and (max-width:1100px){
+@media only screen and (min-width:600px) and (max-width:1040px){
   .input_nav{
     width: 50%;
   }
@@ -209,10 +222,20 @@ footer div span{
   header .right{
     text-align: right;
   }
+  
 }
 
-/* @media only screen and (max-width:700px){
-  .user-icon{
-    margin-left: 24rem;
+@media only screen and (max-width:600px){
+  .cart-icon{
+    display: none;
   }
-} */
+  .logout_header_res{
+    display: none;
+  }
+  .header_responsive_content{
+    display: flex;
+  }
+  .user-logout{
+    display: none;
+  }
+}

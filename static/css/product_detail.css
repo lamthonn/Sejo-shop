@@ -1,7 +1,7 @@
 .container{
     margin-top: 1rem;
+    font-family: 'Wix Madefor Text', sans-serif;
 }
-
 .product{
     width: 100%;
     height: auto;   
@@ -43,11 +43,78 @@
     height: 1.5rem;
     padding: 0 1rem;
 }
-.payment{
-    margin-top: 2rem;
-}
 .payment button{
     width: 15rem;
     height: 4rem;
     font-size: 1.8rem;
+}
+.description p{
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    color: #7b7b7b;
+}
+.suggest{
+    width: 100%;
+    margin-top: 5rem;
+}
+.products_detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.suggest_product{
+    width: 33%;
+}
+.img_suggest img{
+    width: 100%;
+}
+
+.caption_suggest{
+    line-height: 0.7rem;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width:600px ){
+    .products_detail{
+        flex-direction: column;
+    }
+    .suggest_product{
+        width: 100%;
+    }
+
+    .product{
+        flex-direction: column;
+    }
+
+    .product_img{
+        width: 100%;
+        margin: 0;
+    }
+    .product-information{
+        width: 96%;
+        border-top: 1px solid;
+        margin: 0;
+    }
+    .payment{
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width:600px ) and (max-width:1040px ){
+    .product{
+        flex-direction: column;
+    }
+
+    .product_img{
+        width: 100%;
+        margin: 0;
+    }
+    .product-information{
+        width: 96%;
+        border-top: 1px solid;
+        margin: 0;
+    }
+    .payment{
+        margin-bottom: 1rem;
+    }
 }

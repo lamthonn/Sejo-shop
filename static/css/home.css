@@ -3,8 +3,8 @@
 
 /* slider */
 .slider-container {
-  width: 84%;
-  margin-left: 8%;
+  width: 90%;
+  margin-left: 5%;
   overflow: hidden;
   position: relative;
   
@@ -22,7 +22,7 @@
 .slider-item img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .prev, .next {
@@ -84,6 +84,16 @@
   height: auto;
   overflow: hidden;
 
+}
+.sport1{
+  margin-right: 1%;
+  background-position: center; 
+}
+
+
+.sport2{
+  margin-left: 1%;
+  background-position: center;
 }
 
 .sport img{
@@ -181,5 +191,19 @@
     font-size: 200%; 
     font-family: Anton; 
     margin: 0;
+  }
+  .sport-content{
+    flex-direction: column;
+  }
+  .sport2,.sport1{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width:600px ) and (max-width:1024px )
+{
+  .content_featured_footwear{
+    height: 550px;
   }
 }

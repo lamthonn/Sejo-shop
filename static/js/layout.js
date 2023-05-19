@@ -31,11 +31,14 @@ document.getElementById('header').innerHTML = `
       </div>
 
       <div class="user-icon">
-        <i class="fa-solid fa-circle-user"></i>
         <a href="./cart.html">
-          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+          <i class="fa-solid fa-cart-shopping cart-icon" style="padding: 0px 12px 0px 0px;"></i>
         </a>
-        <a href="./home.html" id="logOut">Log Out</a>
+        <div class="user-logout">
+          <i class="fa-solid fa-circle-user"></i>
+          <a href="./home.html" id="logOut" style="padding-bottom: 0;">Log Out</a>
+        </div>
+        
       </div>
     
       <div class="right_responsive" style="display: none">
@@ -61,10 +64,14 @@ document.getElementById('header').innerHTML = `
       </div>
       <div class="header_responsive_right">
         <ul>
-          <li><a href="">LOGIN</a></li>
-          <li><a href="">SIGN IN</a></li>
+            <li class="login_header_res"><a href="./login.html">LOGIN</a></li>
+            <li class="login_header_res"><a href="./SignIn.html">SIGN IN</a></li>
+          <li><a href="./cart.html">CART</a></li>
+          <li class="logout_header_res"><a>LOGOUT</a></li>
         </ul>
       </div>
+
+      
     </div>
     </div>
 `
@@ -108,6 +115,9 @@ const userIcon = document.querySelector(".user-icon");
 const userButton = document.querySelector(".user-buttons");
       if (localStorage.getItem("isLogin") === "true") {
           userButton.style.display = "none";
-          userIcon.style.display = "block";
+          userIcon.style.display = "flex";
+          document.querySelector(".user-logout").style.display = "grid";
+          document.querySelector(".logout_header_res").style.display = "block";
+          document.querySelectorAll(".login_header_res").style.display = "none";
       }
 
