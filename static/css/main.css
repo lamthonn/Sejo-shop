@@ -378,4 +378,10 @@ footer {
   .user-logout{
     display: none;
   }
+  .user-icon a{
+    display: none;
+  }
+  .user-icon .fa-circle-user{
+    display: none;
+  }
 }

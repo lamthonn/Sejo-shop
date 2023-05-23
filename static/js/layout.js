@@ -64,8 +64,8 @@ document.getElementById('header').innerHTML = `
       </div>
       <div class="header_responsive_right">
         <ul>
-            <li class="login_header_res"><a href="./login.html">LOGIN</a></li>
-            <li class="login_header_res"><a href="./SignIn.html">SIGN IN</a></li>
+            <li class="login_header_res1"><a href="./login.html">LOGIN</a></li>
+            <li class="login_header_res2"><a href="./SignIn.html">SIGN IN</a></li>
           <li><a href="./cart.html">CART</a></li>
           <li class="logout_header_res"><a>LOGOUT</a></li>
         </ul>
@@ -180,12 +180,15 @@ document.getElementById('logOut').addEventListener('click', function() {
 
 const userIcon = document.querySelector(".user-icon");
 const userButton = document.querySelector(".user-buttons");
+const login_res1 = document.querySelector(".login_header_res1");
+const login_res2 = document.querySelector(".login_header_res2");
       if (localStorage.getItem("isLogin") === "true") {
           userButton.style.display = "none";
           userIcon.style.display = "flex";
           document.querySelector(".user-logout").style.display = "grid";
-          document.querySelector(".logout_header_res").style.display = "block";
-          document.querySelectorAll(".login_header_res").style.display = "none";
+          document.querySelector(" .logout_header_res").style.display = "block";
+          login_res1.style.display = "none";
+          login_res2.style.display = "none";
       }
 
 
